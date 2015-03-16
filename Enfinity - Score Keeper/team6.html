@@ -1,0 +1,237 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Team</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=Buda:300' rel='stylesheet' type='text/css'>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+	<p style="text-align:center;"><img src="downloadfile.png" width="300px" height="190px" alt="logo" /></p>
+	<p style=" font-size:38px;text-align:center;">Damn It! Just Sell It!</p>
+    <div id="matter">
+    <form action="form.php" method="post">
+    	<table style="width:50%; text-align:center; margin-top:30px; margin-bottom:30px;">
+        <tr>
+    	<td>Team Name:</td><td><input type="text"    name="team" style="width:250px;" value="Rahul Agarwal"/></td>
+        </tr>
+        <tr>
+        <td>Product:</td><td><input type="text"    name="product" style="width:250px;" value="Butter/Cheese"/></td>
+        </tr>
+        <table style="margin-top:30px; margin-bottom:30px;">
+        	<tr>
+            	<td><b>Cateogary</b></td>
+                <td style="text-align:center;"><b>Creativity</b></td>
+                <td style="text-align:center;"><b>Uniqueness</b></td>
+                <td style="text-align:center;"><b>Relevance</b></td>
+                <td style="text-align:center;"><b>Total</b></td>
+            </tr>
+            <tr >
+            	<td></td>
+                <td style="text-align:center;"></td>
+                <td style="text-align:center;"></td>
+                <td style="text-align:center;"></td>
+                <td style="text-align:center;"></td>
+            </tr>
+             <tr >
+            	<td></td>
+                <td style="text-align:center;"></td>
+                <td style="text-align:center;"></td>
+                <td style="text-align:center;"></td>
+                <td style="text-align:center;"></td>
+            </tr>
+             <tr >
+            	<td></td>
+                <td style="text-align:center;"></td>
+                <td style="text-align:center;"></td>
+                <td style="text-align:center;"></td>
+                <td style="text-align:center;"></td>
+            </tr>
+             <tr >
+            	<td></td>
+                <td style="text-align:center;"></td>
+                <td style="text-align:center;"></td>
+                <td style="text-align:center;"></td>
+                <td style="text-align:center;"></td>
+            </tr>
+             <tr >
+            	<td></td>
+                <td style="text-align:center;"></td>
+                <td style="text-align:center;"></td>
+                <td style="text-align:center;"></td>
+                <td style="text-align:center;"></td>
+            </tr>
+             <tr >
+            	<td></td>
+                <td style="text-align:center;"></td>
+                <td style="text-align:center;"></td>
+                <td style="text-align:center;"></td>
+                <td style="text-align:center;"></td>
+            </tr>
+            
+            <!--Galat tareeke se padding bana hua h-->
+            <tr >
+            	<td><b>Logo</b></td>
+                <td style="text-align:center;"><input type="text" style="width:25px;"  class="total txt" name="logoCreativity"/>/10</td>
+                <td style="text-align:center;"><input type="text" style="width:25px;" class="total txt" name="logoUniqueness"/>/10</td>
+                <td style="text-align:center;"><input type="text" style="width:25px;" class="total txt" name="logoRelevence"/>/10</td>
+                <td style="text-align:center;"><span id="sum" >0.00</span></td>
+            </tr>
+            <tr>
+            	<td><b>Brand Name</b></td>
+                <td style="text-align:center;"><input type="text" style="width:25px;" class="total txt2" name="brandCreativity"/>/10</td>
+                <td style="text-align:center;"><input type="text" style="width:25px;" class="total txt2" name="brandUniqueness"/>/10</td>
+                <td style="text-align:center;"><input type="text" style="width:25px;" class="total txt2" name="brandRelevence"/>/10</td>
+                <td style="text-align:center;"><span id="sum2" class="total">0.00</span></td>
+            </tr>
+            <tr>
+            	<td><b>Tag Line</b></td>
+                <td style="text-align:center;"><input type="text" style="width:25px;" class="total txt3" name="tagCreativity"/>/10</td>
+                <td style="text-align:center;"><input type="text" style="width:25px;" class="total txt3" name="tagUniqueness"/>/10</td>
+                <td style="text-align:center;"><input type="text" style="width:25px;" class="total txt3" name="tagRelevence"/>/10</td>
+                <td style="text-align:center;"><span id="sum3" class="total">0.00</span></td>
+            </tr>
+            <tr>
+            	<td><b>Advertisement</b></td>
+                <td style="text-align:center;"><input type="text" style="width:25px;" class="total txt4" name="adCreativity"/>/20</td>
+                <td style="text-align:center;"><input type="text" style="width:25px;" class="total txt4" name="adUniqueness"/>/20</td>
+                <td style="text-align:center;"><input type="text" style="width:25px;" class="total txt4" name="adRelevence"/>/20</td>
+                <td style="text-align:center;"><span id="sum4" class="total">0.00</span></td>
+            </tr>
+        </table> 
+        <p style="font-size:36px; font-weight:500; text-align:center;">Grand Total : <span id="sum5">0.00</span></p>
+        <br  /><br  />
+        <p style="text-align:center;"><input type="submit"  /></p>
+        </form>
+    </div>
+    <script>
+    $(document).ready(function(){
+ 
+        //iterate through each textboxes and add keyup
+        //handler to trigger sum event
+        $(".txt").each(function() {
+ 
+            $(this).keyup(function(){
+                calculateSum();
+            });
+        });
+		
+		$(".txt2").each(function() {
+ 
+            $(this).keyup(function(){
+                calculateSum2();
+            });
+        });
+		
+		$(".txt3").each(function() {
+ 
+            $(this).keyup(function(){
+                calculateSum3();
+            });
+        });
+		$(".txt4").each(function() {
+ 
+            $(this).keyup(function(){
+                calculateSum4();
+            });
+        });
+		$(".total").each(function() {
+ 
+            $(this).keyup(function(){
+                calculateSum5();
+            });
+        });
+ 
+ 
+    });
+	
+	
+ 
+    function calculateSum() {
+ 
+        var sum = 0;
+        //iterate through each textboxes and add the values
+        $(".txt").each(function() {
+ 
+            //add only if the value is number
+            if(!isNaN(this.value) && this.value.length!=0) {
+                sum += parseFloat(this.value);
+            }
+ 
+        });
+        //.toFixed() method will roundoff the final sum to 2 decimal places
+        $("#sum").html(sum.toFixed(2));
+    }
+	
+	function calculateSum2() {
+ 
+        var sum = 0;
+        //iterate through each textboxes and add the values
+        $(".txt2").each(function() {
+ 
+            //add only if the value is number
+            if(!isNaN(this.value) && this.value.length!=0) {
+                sum += parseFloat(this.value);
+            }
+ 
+        });
+        //.toFixed() method will roundoff the final sum to 2 decimal places
+        $("#sum2").html(sum.toFixed(2));
+    }
+	
+	function calculateSum3() {
+ 
+        var sum = 0;
+        //iterate through each textboxes and add the values
+        $(".txt3").each(function() {
+ 
+            //add only if the value is number
+            if(!isNaN(this.value) && this.value.length!=0) {
+                sum += parseFloat(this.value);
+            }
+ 
+        });
+        //.toFixed() method will roundoff the final sum to 2 decimal places
+        $("#sum3").html(sum.toFixed(2));
+    }
+	
+	function calculateSum4() {
+ 
+        var sum = 0;
+        //iterate through each textboxes and add the values
+        $(".txt4").each(function() {
+ 
+            //add only if the value is number
+            if(!isNaN(this.value) && this.value.length!=0) {
+                sum += parseFloat(this.value);
+            }
+ 
+        });
+        //.toFixed() method will roundoff the final sum to 2 decimal places
+        $("#sum4").html(sum.toFixed(2));
+    }
+	
+	function calculateSum5() {
+ 
+        var sum = 0;
+        //iterate through each textboxes and add the values
+        $(".total").each(function() {
+ 
+            //add only if the value is number
+            if(!isNaN(this.value) && this.value.length!=0) {
+                sum += parseFloat(this.value);
+            }
+ 
+        });
+        //.toFixed() method will roundoff the final sum to 2 decimal places
+        $("#sum5").html(sum.toFixed(2));
+    }
+	
+
+	
+	
+</script>
+</body>
+</html>

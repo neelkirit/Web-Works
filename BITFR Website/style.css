@@ -1,0 +1,165 @@
+@charset "utf-8";
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	width:100%;
+}
+
+
+.header {
+	
+	text-align:center;
+	background:#F8F8F8;
+	padding-bottom:15px;
+	font-family: 'Alegreya Sans', sans-serif;
+}
+
+
+.content {
+	font-family: 'Carrois Gothic', sans-serif;
+}
+
+.content ul, .content ol { 
+	 /* this padding mirrors the right padding in the headings and paragraph rule above. Padding was placed on the bottom for space between other elements on the lists and on the left to create the indention. These may be adjusted as you wish. */
+}
+
+
+.matter{
+	margin:20px;
+	text-align:center;
+
+	
+	
+}
+.qoute{
+	clear:both;
+	text-align:center;
+	padding:10px;
+	margin-top:10px;
+	font-size:24px;
+	font-family: 'Buda', cursive;
+}
+#slideshow{
+	margin-top:30px;
+	padding-bottom:70px;
+	border-bottom:thin #EFEFEF solid;
+}
+.footer {
+	background:#F8F8F8;
+	widht:100%;
+	font-family: 'Carrois Gothic', sans-serif;
+}
+#bap{
+	width:90%;
+	margin:10px auto;
+	}
+#add{
+		width:25%;
+		float:left;
+		margin-bottom:30px;
+}
+#soc{
+	width:25%;
+	float:left;
+	margin-left:12.5%;
+	margin-bottom:30px;
+	}
+#credit{
+	width:25%;
+	float:left;
+	margin-left:12.5%;
+	margin-bottom:30px;
+	
+	}
+.foot{
+	clear:both;
+	padding-top:20px;
+	font-family: 'Carrois Gothic', sans-serif;
+	border-top:#CCC thin solid;
+	}
+#wrap{
+	width:90%;
+	margin:20px auto;
+	
+	}
+#fb{
+	width:25%;
+	float:left;
+	margin-bottom:20px;
+	}
+#cont{
+	width:25%;
+	float:left;
+	margin-left:12.5%;
+	text-align:center;
+	margin-bottom:20px;
+	}
+#cred{
+	width:25%;
+	float:left;
+	margin-left:12.5%;
+	text-align:center;
+	margin-bottom:20px;
+	}
+#nav ul li{
+	display:inline;
+	margin:10px 45px;
+}
+#nav ul{
+	display:block;
+	width:85%;
+	margin:0px auto;
+}
+#nav{
+	text-align:center;
+	background:#AEAEAE;
+	padding-top:5px;
+	padding-bottom:5px;
+	font-size:20px;
+	font-family: 'Buda', cursive;
+	font-weight:600;
+}
+#nav a{
+	text-decoration:none;
+	color:#FFF;
+}
+#nav a:hover{
+	color:#09f;
+	
+	border-top:#09F thick solid;
+}
+.matter2{
+	width:90%;
+	margin:20px auto;	
+	}
+.qoute2{
+	text-align:center;
+	font-weight:600;
+	padding:10px;
+	}
+#form{
+	width:90%;
+	margin:20px auto;
+	}
+.pic{
+	float:left;
+	margin:10px 20px;
+	text-align:center;
+}
+#lft{
+	width:30%;
+	float:left;
+	margin-bottom:20px;
+}
+#map{
+	width:50%;
+	float:right;
+	margin-bottom:20px;
+}
+#contacts{
+	clear:both;
+	padding:10px;
+	width:30%;
+}

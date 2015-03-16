@@ -1,0 +1,178 @@
+@charset "utf-8";
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-color:#bac0be;
+	
+	/* IE10 Consumer Preview */ 
+
+}
+
+/* ~~ Element/tag selectors ~~ */
+
+
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+	background-color:#FFFfff;
+}
+
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+
+	 /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+
+
+
+#menu a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+	
+	color:#e56038;
+	
+}
+#selected{
+	
+	color:#e56038;
+}
+
+/* ~~this fixed width container surrounds the other divs~~ */
+.container {
+	width: 1200px;
+	background-color: #FFF;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+	box-shadow: 0px 0px 20px #000000;
+	
+	
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	background-color: white;
+	display:inline;
+}
+
+.menubar
+{
+	
+	float:left;
+	width:150px;
+	text-align:center;
+	font-family: 'Duru Sans', sans-serif;
+	text-decoration:none;
+	color:#CCCccc;
+	margin:0px 20px 0px 30px;
+}
+
+li
+{
+	display:inline;
+}
+ul
+{
+	font-family: 'Duru Sans', sans-serif;
+	float:left;
+    height:30px;
+	width:1200px;
+	margin:0px 0px 0px 0px;
+	padding:12px 0px 0px 0px;
+	background-color:#353535;	
+    font-size:13px;
+	/* IE10 Consumer Preview */ 
+
+}
+
+
+.sidebar1 {
+	float: right;
+	width: 178px;
+	background-color: #FFF;
+	padding-bottom: 10px;
+	text-align:center;
+	font-size:16px;
+	font-family:'Duru Sans', sans-serif;
+	color:#e56038;
+	
+}
+.content {
+	padding: 0px 0px 10px 0px;
+	width: 1020px;
+	float: left;
+	
+	}
+.footer {
+	width:1200px;
+	position: relative;/* this gives IE6 hasLayout to properly clear */
+	clear: both; /* this clear property forces the .container to understand where the columns end and contain them */
+	color:#000;	
+	
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+
+.foot1
+{
+	margin: 10px 0px 20px 0px;
+	width:300px;
+	text-align:left;
+	color:#000;
+	float:left;
+}
+#foot1 a
+{
+	color:blue; 
+	text-decoration:none;
+}
+
+.foot2
+{
+	margin: 10px 0px 20px 0px;
+	float:left;
+	width:300px;
+	text-align:left;
+	
+}
+.foot3
+{
+	float:left;
+	width:300px;
+	margin: 10px 0px 20px 0px;
+	text-align:left;
+}
+.foot4
+{
+	float:left;
+	width:300px;
+	margin: 10px 0px 20px 0px;
+	text-align:left;
+}
+div.gallery
+{
+  margin: 5px;
+  padding: 5px;
+  
+  height: auto;
+  width: auto;
+  float: left;
+  text-align: center;
+  font-family:'Duru Sans', sans-serif;
+  box-shadow: 0px 0px 5px #e56038;
+}	
+div.gallery img
+{
+  display: inline;
+  margin: 2px;
+  
+}
+div.gallery a:hover img 
+{
+	}
+div.description
+{
+  text-align: center;
+ }

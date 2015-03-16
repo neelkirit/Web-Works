@@ -1,0 +1,10 @@
+.sportsevent
+{
+	
+	display: block;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	transition: background 0.3s ease-in-out;
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}

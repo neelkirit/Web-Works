@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0;
+	padding:0;
+	
+}
+body{
+	width:95%;
+	
+	margin:10px auto;
+}
+.par{
+	margin-top:100px;
+}
+.grid{
+	width:130px;
+	height:130px;
+	margin:5px;
+	background:#063;
+	float:left;
+	text-align:center;
+	
+	vertical-align:middle;
+}
